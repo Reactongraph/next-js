@@ -1,0 +1,38 @@
+.container-fluid {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login_container {
+  background: rgba(2, 2, 2, 0.7);
+  padding: 50px;
+  color: white;
+  top: 70px;
+}
+
+.login {
+  background: url('../images/next_bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-container {
+  background: aliceblue;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-container .jumbotron {
+  background: #d5eaff;
+}
+
+.about-container {
+  height: 100vh;
+}
