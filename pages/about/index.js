@@ -1,32 +1,39 @@
+import fetch from 'isomorphic-unfetch'
 import Layout from '../../components/Layout'
 
-const About = () => {
-  return (
-    <Layout>
-      <div className="card bg-light about-container">
-        <div className="card-header">
-          <h4>
-            Next JS is the framework used for rendering react application on
-            server side.
-          </h4>
+class About extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    const { aboutUs } = this.props
+    return (
+      <Layout>
+        <div className="card bg-light about-container">
+          <div className="card-header">
+            <h4>{aboutUs.heading}</h4>
+          </div>
+          <div className="card-body">
+            <h4 className="card-title">{aboutUs.featureHeading}</h4>
+            <ul>
+              {aboutUs.feature.map((data, index) => {
+                return <li key={index}>{data}</li>
+              })}
+            </ul>
+          </div>
         </div>
-        <div className="card-body">
-          <h4 className="card-title">Some core Features are</h4>
-          <ul>
-            <li>Server renders our react application.</li>
-            <li>Automatic code splitting for faster page reload.</li>
-            <li>Simple client side routing.</li>
-            <li>Build in CSS support.</li>
-            <li>
-              Able to implement with Express or any other node JS framework.
-            </li>
-            <li>Hot reloading.</li>
-            <li>Deployment.</li>
-          </ul>
-        </div>
-      </div>
-    </Layout>
-  )
+      </Layout>
+    )
+  }
+}
+
+About.getInitialProps = async () => {
+  const res = await fetch('http://localhost:3002/aboutUs')
+  const data = await res.json()
+  return {
+    aboutUs: data
+  }
 }
 
 export default About

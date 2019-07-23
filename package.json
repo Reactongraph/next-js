@@ -6,11 +6,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "nodemon server/index",
+    "json-server": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "mongoose": "^5.6.6",
     "next": "^8.1.0",
+    "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
