@@ -2,13 +2,13 @@ Next JS is the framework used for rendering react application on server side.
 
 ### Feature of next js app
 
-Server renders our react application.
-Automatic code splitting for faster page reload.
-Simple client side routing.
-Build in CSS support.
-Able to implement with Express or any other node JS framework.
-Hot reloading.
-Deployment.
+1. Server renders our react application.
+2. Automatic code splitting for faster page reload.
+3. Simple client side routing.
+4. Build in CSS support.
+5. Able to implement with Express or any other node JS framework.
+6. Hot reloading.
+7. Deployment.
 
 ### Libraries used
 
