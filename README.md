@@ -23,7 +23,7 @@ Next JS is the framework used for rendering react application on server side.
 ### Install
 $ git clone https://github.com/Reactongraph/next-js.git<br>
 $ cd next-js<br>
-$ npm run dev or yarn run dev<br>
+$ npm start or yarn start<br>
 
 ### `npm run dev or yarn run dev`
 
