@@ -12,13 +12,13 @@ Next JS is the framework used for rendering react application on server side.
 
 ### Libraries used
 
-nodemon
-next
-isomorphic-unfetch
-express
-body-parser
-react
-react-dom
+1. nodemon
+2. next
+3. isomorphic-unfetch
+4. express
+5. body-parser
+6. react
+7. react-dom
 
 ### Install
 $ git clone https://github.com/Reactongraph/next-js.git<br>
