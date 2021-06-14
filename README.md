@@ -1,5 +1,12 @@
 Next JS is the framework used for rendering react application on server side.
 
+![ScreenShot](https://raw.github.com/Reactongraph/next-js/master/assets/home.png)
+
+![ScreenShot](https://raw.github.com/Reactongraph/next-js/master/assets/login.png)
+
+### Description
+this is an next.js web Application POC having two page home and login page 
+
 ### Feature of next js app
 
 1. Server renders our react application.
