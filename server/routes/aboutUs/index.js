@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-// const aboutUs = require('../models/aboutUs')
 
 const aboutUs = {
   id: 1,
@@ -14,8 +13,8 @@ const aboutUs = {
     'Build in CSS support.',
     'Able to implement with Express or any other node JS framework.',
     'Hot reloading.',
-    'Deployment.'
-  ]
+    'Deployment.',
+  ],
 }
 
 router.get('/', (req, res, next) => {
