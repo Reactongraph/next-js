@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import NavBar from './NavBar'
 
-const Layout = props => {
+const Layout = (props) => {
   return (
     <div>
       <Head>
